@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrolling Portrait Video Background</title>
+    <style>
+        /* Mengatur margin dan padding untuk seluruh halaman */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+            height: 300vh; /* Membuat halaman lebih tinggi untuk scroll */
+        }
+
+        /* Video background potrait */
+        .video-background {
+            position: absolute;
+            top: 0;
+            left: 50%; /* Memastikan video tetap di tengah horizontal */
+            transform: translateX(-50%);
+            width: 100%;
+            height: 300vh; /* Video mengikuti tinggi halaman untuk menyesuaikan scroll */
+            object-fit: cover; /* Mengisi layar secara proporsional */
+            z-index: -1; /* Video berada di belakang konten */
+        }
+
+        /* Konten halaman */
+        .content {
+            position: relative;
+            z-index: 1;
+            color: #333; /* Warna teks yang kontras dengan latar belakang */
+            text-align: center;
+            padding: 20px;
+            margin-top: 50vh; /* Membuat konten muncul di tengah setelah scroll */
+            background-color: rgba(255, 255, 255, 0.7); /* Background putih dengan opacity 0.5 */
+            border-radius: 10px; /* Membuat sudut konten menjadi melengkung */
+            max-width: 1000px; /* Batas maksimal lebar konten */
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #ff69b4; /* Warna teks header */
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* Mengatur gambar */
+        .image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px; /* Membuat gambar memiliki sudut melengkung */
+            margin-bottom: 15px; /* Memberi jarak antara gambar dan paragraf */
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Video background potrait -->
+    <video autoplay muted loop class="video-background">
+        <source src="videotester.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Konten halaman dengan background putih transparan -->
+    <div class="content">
+        <h1>Happy Birthday</h1>
+        <h1>My Sweetheart Audrey Giovanni!</h1>
+        <img src="AG.jpg" alt="Audrey Giovanni" class="image">
+        <p>Dede sayangkuuuu, happy birthday yaaa! 🎉🥳 Nggak kerasa udah makin dewasa aja dede, tapi kok lucu sama gemesinnya makin nambah juga???🤔🤔 😜💕 Semoga di umur baru ini semua yang dede impiin bisa tercapai. Hari ini dede beli martabak yah? karena...… special banget 😘 XIXIXIXIXIXI (Maaf alay 😭). You deserve all the best things in life, seriously! Semoga makin sukses dan makin keren di segala hal yang dede lakuin, dede pasti bisa! KARENA DEDE ADALAH YANG TER KEMRENNNNNNNNN 💪🔥 Enjoy your day to the fullest, Dede! 💖 I hope this year brings you endless joy, love, and tons of amazing experiences. Jangan lupa makan kue yang banyak biar makin manis dedekuu inii aw aww 😋🎂. TAPI Jangan kebanyakan manis deh, nanti dede jadi SUPER DUPER TRIPLE MEGA MONSTER MASTER GIANT HYPERAKTIF (Busetttt banyak bener). Pokoknaa hari ini dede harus FULL SENYUM YAHHH 😠😠😠, KALO SAMPE NDA FULL SENYUM NANTI MAS MARAHIN CEMBERUTNYAA!!!! ☝🏻☝🏻☝🏻.</p>
+
+        <p>Oh iyaa dede, dede tau nda dari rate 1-10 rasa sayang mamas ke dede tuh angka 8...………….. tapi horizontal!!!! 🤯🤯💖. CONGSETULATON Karena dede selalu berhasil bikin mamas senyum, walaupun lagi badmood sekalipun 😚😚. Every little thing you do, dari perhatian kecil sampai hal-hal besar yang dede kasih, semuanya bikin mas makin sayang sama dede 😘. (BJIR NIKAH AJA GASIIII? BESOK GIMANA???) Mas bersyukur banget bisa kenal dede, bisa bareng-bareng ngelewatin banyak hal, dari yang fun sampai yang challenging. I love how we can be silly together (even tho we actually that crazy? 🤷🏼‍♂🤷🏼‍♂), ngobrolin hal-hal random, atau cuma saling ngeselin satu sama lain😛😛. You make everything better, and I honestly can't imagine my days without you 💕. Semoga dede selalu tahu ya, seberapa besar rasa sayang mas tuh ke dede SEDUNIAAA (158 aja sih dunia nya 🤏🏻🤏🏻) Dari hal kecil sampai besar, I’m always here for you, supporting you, and loving you more each day 🌹. Mas juga mau bilang supaya dede tetep semangat y		a! 💪✨ As long as you keep trying and confident, nothing is impossible! 🚀 Kadang mungkin bakal ada hari-hari yang berat, atau situasi yang bikin dede ngerasa down 😔 karena di GEPREK, di LINDES, di PRESTO, di BAKAR, di KUKUS, di COR, di SEMEN, di PALU, di PAKU, di BOR sama problem dunia ini. Tapi inget ya, mas ada di samping dede, dukung dede tanpa henti. 💖 dede nggak sendirian, and you’ve got everything it takes to succeed. Stay strong, and keep pushing forward, Dede! 🌟 Semoga apa yang dede pengenin selama ini bisa terwujud satu per satu. Mas selalu percaya sama dede, dan pasti bangga banget lihat dede kecil ini berhasil! 🎯✨ Keep going, love!
+	</p>
+	<p>Dede, mas juga mau minta maaf karena cuma bisa ngucapin dari jauh 😔. Rasanya pengen banget ngerayain bareng dan kasih surprise langsung. Tapi meskipun mas nggak di sana, semoga tahun berikutnya mas bisa kasih secara langsung yahhh ❤. Jadi meskipun kita terpisah Jarak, bukan menjadi alasan buat nggak ngasi perhatian dan ucapan ke dede.</p>
+        <p>Dear Audrey Giovanni, the most cute and clumsy girl in the world, with gorgeous smile at her cheeks. I'm endlessly grateful that love brought you into my life, and every day with you feels like a gift I could never repay. Happy Birhtday once more 🥳🥳🥳, enjoy this beautiful day my love.</p>
+	<p>With all my heart, Maulana Ishaq Cakraningrat💓💓</p>
+    </div>
+
+</body>
+</html>
